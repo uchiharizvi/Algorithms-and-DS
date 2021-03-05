@@ -21,14 +21,15 @@ public class QuickSort {
         System.out.println("Array : ");
         Print.printArray(arr);
         long start = System.currentTimeMillis();
-        sort(arr, 0, arr.length - 1);
+        QuickSort sort = new QuickSort();
+        sort.sort(arr, 0, arr.length - 1);
         long end = System.currentTimeMillis();
         System.out.println("Sorted : ");
         Print.printArray(arr);
         System.out.println("Time Taken : " + (end - start) + "ms");
     }
 
-    private static void sort(int[] arr, int low, int high) {
+    public void sort(int[] arr, int low, int high) {
         /**low - starting index
          * high - ending index**/
         if (low < high) {
