@@ -1,4 +1,4 @@
-package com.kavish.tutorials.dynamicprogramming.fibonacii;
+package datastructures.dynamicprogramming.fibonacii;
 
 import java.time.Duration;
 import java.time.Instant;

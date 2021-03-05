@@ -1,4 +1,4 @@
-package com.kavish.tutorials.dynamicprogramming.fibonacii;
+package datastructures.dynamicprogramming.fibonacii;
 
 public class Recursive {
     public int print(int n) {

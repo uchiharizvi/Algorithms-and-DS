@@ -1,4 +1,4 @@
-package com.kavish.tutorials.dynamicprogramming.fibonacii;
+package datastructures.dynamicprogramming.fibonacii;
 
 public class DynamicStrategy {
     public long print(int n) {
