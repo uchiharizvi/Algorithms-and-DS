@@ -1,5 +1,7 @@
 package datastructures.problems.arrays.singledimension.sorting.mergesort;
 
+import datastructures.problems.arrays.singledimension.sorting.Print;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -14,15 +16,18 @@ public class MergeSort {
         int size = scan.nextInt();
         int[] arr = new int[size];
         for (int a = 0; a < size; a++) {
-            arr[a] = rand.nextInt(size);
+            arr[a] = rand.nextInt(1000);
         }
         System.out.println("Array : ");
-        printArray(arr);
+        Print.printArray(arr);
         MergeSort mergeSort = new MergeSort();
 
+        long start = System.currentTimeMillis();
         mergeSort.sort(arr, 0, arr.length - 1);
+        long end = System.currentTimeMillis();
         System.out.println("Sorted : ");
-        printArray(arr);
+        Print.printArray(arr);
+        System.out.println("Time Taken : " + (end - start) + "ms");
     }
 
     private void sort(int[] arr, int left, int right) {
@@ -83,11 +88,5 @@ public class MergeSort {
         }
     }
 
-    // Print the array
-    static void printArray(int arr[]) {
-        int n = arr.length;
-        for (int i = 0; i < n; ++i)
-            System.out.print(arr[i] + " ");
-        System.out.println();
-    }
+
 }
