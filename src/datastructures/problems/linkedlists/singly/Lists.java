@@ -44,7 +44,14 @@ public class Lists {
         +----+------+     +----+------+     +----+------+
         | 1  |  o-------->| 2  |  o-------->|  3 | null |
         +----+------+     +----+------+     +----+------+ */
-
+        list.printList();
+    }
+    public void printList(){
+        Node n = head;
+        while (n!=null){
+            System.out.print(n.data + " ");
+            n=n.next;
+        }
     }
 
 }
