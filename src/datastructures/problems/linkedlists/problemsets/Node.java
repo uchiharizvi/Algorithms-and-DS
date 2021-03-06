@@ -4,7 +4,7 @@ package datastructures.problems.linkedlists.problemsets;
  * Node Class of linked list
  **/
 public class Node {
-    int data;
+    public int data;
     public Node next;
 
     /**

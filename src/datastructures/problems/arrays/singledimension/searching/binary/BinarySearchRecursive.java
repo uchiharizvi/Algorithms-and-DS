@@ -1,11 +1,11 @@
-package datastructures.problems.arrays.singledimension.searching;
+package datastructures.problems.arrays.singledimension.searching.binary;
 
 import datastructures.problems.arrays.singledimension.sorting.Print;
 import datastructures.problems.arrays.singledimension.sorting.quicksort.QuickSort;
 
 import java.util.Random;
 import java.util.Scanner;
-
+/**Recursive Example*/
 public class BinarySearchRecursive {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
