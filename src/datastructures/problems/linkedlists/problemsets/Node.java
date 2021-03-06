@@ -1,11 +1,11 @@
-package datastructures.problems.linkedlists.problemsets.numberofnodes;
+package datastructures.problems.linkedlists.problemsets;
 
 /**
  * Node Class of linked list
  **/
 public class Node {
     int data;
-    Node next;
+    public Node next;
 
     /**
      * Constructor

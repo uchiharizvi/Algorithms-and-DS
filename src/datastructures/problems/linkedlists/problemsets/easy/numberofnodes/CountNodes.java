@@ -1,4 +1,6 @@
-package datastructures.problems.linkedlists.problemsets.numberofnodes;
+package datastructures.problems.linkedlists.problemsets.easy.numberofnodes;
+
+import datastructures.problems.linkedlists.problemsets.Node;
 
 public class CountNodes {
     Node head;
