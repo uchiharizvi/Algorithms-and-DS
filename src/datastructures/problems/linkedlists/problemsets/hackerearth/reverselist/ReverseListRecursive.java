@@ -1,8 +1,6 @@
-package datastructures.problems.linkedlists.problemsets.easy.reverselist.recursive;
+package datastructures.problems.linkedlists.problemsets.hackerearth.reverselist;
 
-import datastructures.problems.linkedlists.problemsets.easy.reverselist.iterative.ReverseLinkedList;
-
-public class ReverseList {
+public class ReverseListRecursive {
     static Node head;//head
 
     static class Node {

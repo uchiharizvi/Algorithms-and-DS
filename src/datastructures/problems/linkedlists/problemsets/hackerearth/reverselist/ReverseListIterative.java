@@ -1,7 +1,7 @@
-package datastructures.problems.linkedlists.problemsets.easy.reverselist.iterative;
+package datastructures.problems.linkedlists.problemsets.hackerearth.reverselist;
 
 
-public class ReverseLinkedList {
+public class ReverseListIterative {
     static Node head;
 
     static class Node {
@@ -16,7 +16,7 @@ public class ReverseLinkedList {
     public static void main(String[] args) {
         /*Scanner scan = new Scanner(System.in);
         scan.nextInt();*/
-        ReverseLinkedList list = new ReverseLinkedList();
+        ReverseListIterative list = new ReverseListIterative();
         list.head = new Node(85);
         list.head.next = new Node(15);
         list.head.next.next = new Node(4);
