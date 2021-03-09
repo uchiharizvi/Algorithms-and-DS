@@ -1,4 +1,4 @@
-package datastructures.problems.arrays.singledimension.searching;
+package datastructures.problems.arrays.singledimension.searching.problemset;
 
 /**
  * Find Peak If it exists
