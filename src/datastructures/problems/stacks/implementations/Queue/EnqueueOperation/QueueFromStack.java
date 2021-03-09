@@ -1,4 +1,4 @@
-package datastructures.problems.stacks.implementations.costlyenque;
+package datastructures.problems.stacks.implementations.Queue.EnqueueOperation;
 
 import datastructures.problems.stacks.StackOperations;
 
