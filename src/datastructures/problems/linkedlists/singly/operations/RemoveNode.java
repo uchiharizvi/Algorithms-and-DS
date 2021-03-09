@@ -19,7 +19,7 @@ public class RemoveNode {
     /**
      * Remove a specific node form linked list
      **/
-    static void remove(int key) {
+    static void removeNode(int key) {
         //Store head in a temp node
         Node temp = head, prev = null;
         //if head node needs to be removed
@@ -35,7 +35,15 @@ public class RemoveNode {
         if (temp == null) return;
         prev.next = temp.next; //Unlink the node from linked list
     }
-    static void remove(){
+    static Node removeLastNode(Node head){
+        if(head == null) return null;
+        if(head.next == null) return null;
+        //Find second last node
+        Node secondLast = head;
+        while(secondLast.next.next!=null) secondLast=secondLast.next;
+        //Change next of secondLast Node
+        secondLast.next=null;//Delete last node
+        return head;
 
     }
 }

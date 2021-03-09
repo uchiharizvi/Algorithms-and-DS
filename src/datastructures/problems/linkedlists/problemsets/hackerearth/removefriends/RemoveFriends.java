@@ -73,21 +73,16 @@ public class RemoveFriends {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
-        System.out.print("Number of Test Cases : ");
         //Number of test cases
         int testCases = s.nextInt();
         for (int i = 0; i < testCases; i++) {
 
-            System.out.println("Test Case " + i + " : ");
-            System.out.print("Total Number Of Friends : ");
             //Total Number of friends
             int n = s.nextInt();
             //Friends to be deleted
-            System.out.print("Friend(s) to delete : ");
             int k = s.nextInt();
             int[] popularity = new int[n];
-            System.out.println("Popularity : ");
-            for (int j=1; j <= k; j++) {
+            for (int j = 0; j < n; j++) {
                 popularity[j] = s.nextInt();
             }
             push(popularity);
@@ -127,19 +122,31 @@ public class RemoveFriends {
     private static void deleteFriend(int deleteFriend) {
         boolean delF = false;//placeholder if friend is deleted
         Node ptr;
-        Node tail;
-        ptr = head;
-        while (ptr.next != null) {
-            if (ptr.data < ptr.next.data) {
-                remove(ptr.data);
-                delF = true;
-                break;
+        for (int i = 0; i < deleteFriend; i++) {
+            ptr = head;
+            while (ptr.next != null) {
+                if (ptr.data < ptr.next.data) {
+                    remove(ptr.data);
+                    delF = true;
+                    break;
+                }
+                ptr = ptr.next;
             }
         }
         if (delF == false) {
-            while (ptr.next == null) remove(ptr.data);
+            removeLastNode(head);
         }
 
+    }
+
+    static void removeLastNode(Node head) {
+        /*if(head == null) return null;
+        if(head.next == null) return null;*/
+        //Find second last node
+        Node secondLast = head;
+        while (secondLast.next.next != null) secondLast = secondLast.next;
+        //Change next of secondLast Node
+        secondLast.next = null;//Delete last node
     }
 
     /**
