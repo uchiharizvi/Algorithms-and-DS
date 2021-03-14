@@ -3,7 +3,7 @@ package datastructures.problems.tree;
 /**
  * Tree Operations
  **/
-public class Operations {
+public class TreeOperations {
     public static void main(String[] args) {
 
     }
