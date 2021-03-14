@@ -1,5 +1,5 @@
 # **Stacks Implementation**
-## **Introduction**
+##**Introduction**
 
 Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO (Last In First Out) or FILO (First In Last Out). 
 
@@ -13,7 +13,7 @@ Mainly the following three basic operations are performed in the stack:
 
 4) isEmpty: Returns true if stack is empty, else false.
 
-### **Time Complexities of operations on stack:**
+###**Time Complexities of operations on stack:**
 push(), pop(), isEmpty() and peek() all take O(1) time. We do not run any loop in any of these operations.
 
 

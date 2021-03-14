@@ -6,17 +6,17 @@ public class StackOperations {
     int a[] = new int[MAX];
 
     //Check if Empty
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return (top < 0);
     }
 
     //Constructor
-    StackOperations() {
+    public StackOperations() {
         top = -1;
     }
 
     //push operation -- to add an item to stack
-    boolean push(int x) {
+    public boolean push(int x) {
         if (top >= (MAX - 1)) {
             System.out.println("Stack Overflow");
             return false;
@@ -28,12 +28,22 @@ public class StackOperations {
     }
 
     //pop operation - removing an element from stack
-    int pop() {
+    public int pop() {
         if (top < 0) {
             System.out.println("Stack Underflow");
             return 0;
         } else {
             int x = a[top--];
+            return x;
+        }
+    }
+
+    public int peek() {
+        if (top < 0) {
+            System.out.println("Stack Underflow");
+            return 0;
+        } else {
+            int x = a[top];
             return x;
         }
     }
